@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+
+        /* Elegant dark gradient */
+        background: linear-gradient(135deg, #0f172a, #334155);
+        height: 100vh;
+    }
+
+    .home-container {
+        width: 60%;
+        margin: 110px auto;
+        padding: 50px;
+        text-align: center;
+
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        backdrop-filter: blur(8px);
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    }
+
+    .home-container h2 {
+        color: #ffffff;
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .btn-custom {
+        display: inline-block;
+        padding: 14px 30px;
+        margin: 12px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        transition: 0.3s ease;
+    }
+
+    .login-btn {
+        background: #2563eb;
+    }
+
+    .login-btn:hover {
+        background: #1d4ed8;
+        transform: scale(1.05);
+    }
+
+    .register-btn {
+        background: #22c55e;
+    }
+
+    .register-btn:hover {
+        background: #16a34a;
+        transform: scale(1.05);
+    }
+
+    .admin-btn {
+        background: #f97316;
+    }
+
+    .admin-btn:hover {
+        background: #ea580c;
+        transform: scale(1.05);
+    }
+</style>
+
+<div class="home-container">
+
+    <h2>Welcome to Leave Management System</h2>
+
+    <a href="/login" class="btn-custom login-btn">
+        Employee Login
+    </a>
+
+    <a href="/register" class="btn-custom register-btn">
+        Register
+    </a>
+
+    <a href="/admin" class="btn-custom admin-btn">
+        Admin Login
+    </a>
+
+</div>
+
+{% endblock %}

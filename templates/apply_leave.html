@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h2>Apply Leave</h2>
+
+<form method="POST">
+<input type="text" name="type" placeholder="Leave Type" class="form-control mb-2" required>
+<input type="date" name="start" class="form-control mb-2" required>
+<input type="date" name="end" class="form-control mb-2" required>
+<textarea name="reason" placeholder="Reason" class="form-control mb-2"></textarea>
+
+<button class="btn btn-success">Apply</button>
+</form>
+
+{% endblock %}
